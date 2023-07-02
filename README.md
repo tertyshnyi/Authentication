@@ -9,7 +9,7 @@ This project is a web application that allows users to register and visualize el
 
 ## Installation
 1) Clone the repository to your local machine.
-2) Install dependencies by running `npm install fortawesome/fontawesome-free axios bcryptjs mongodb mongoose @types/bcryptjs react-icons next-auth`. If something wrong you can install all the dependencies in package.json.
+2) Install dependencies by running `npx install fortawesome/fontawesome-free axios bcryptjs mongodb mongoose @types/bcryptjs react-icons next-auth`. If something wrong you can install all the dependencies in package.json.
 3) Write this code in your command line for generation random string for session: 
 $bytes = [byte[]]::new(32)
 [Security.Cryptography.RNGCryptoServiceProvider]::Create().GetBytes($bytes)
