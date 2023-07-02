@@ -1,0 +1,96 @@
+.signup_field {
+    margin-top: 26px;
+}
+
+.signup_text {
+    font-size: 15px;
+    color: #ffd5d4;
+    font-family: Arial;
+    text-decoration: none;
+    padding: 7px;
+    cursor: default;
+    transition: font-size 0.2s;
+}
+
+.signup_text:hover {
+    transition: font-size 0.3s;
+    font-size: 17px;
+}
+
+.login_text {
+    font-size: 35px;
+    font-family: "Arial";
+    color: #fafdff;
+    cursor: default;
+}
+
+.text_field {
+    font-family: "Arial";
+    font-size: 20px;
+    padding: 10px;
+    width: 70%;
+    height: 30px;
+    margin-bottom: 20px;
+    background-color: rgb(255 211 211 / 73%);
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    border-width: 0px;
+    box-shadow: 0 0 15px #ce7171;
+    transition-duration: 0.2s;
+}
+
+.text_field:hover {
+    transition-duration: 0.3s;
+    border: none;
+    width: 72%;
+}
+
+.text_field:focus {
+    outline: none;
+    border:0px solid black;
+}
+
+.text_field::placeholder {
+    color: rgba(51, 42, 42, 0.73);
+    opacity: 1;
+}
+
+.center {
+    transition: margin 1s, opacity 1.4s;
+    width: 500px;
+    height: 370px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(0, 0, 0, 0.47);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 25px;
+    border-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(255, 74, 72, 0.65);
+    padding: 10px;
+    text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+    .center {
+        width: 300px;
+    }
+
+    .login_text {
+        font-size: 20px;
+    }
+
+    .text_field {
+        font-size: 10px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+
+}

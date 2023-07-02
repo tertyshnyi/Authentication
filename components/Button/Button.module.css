@@ -1,0 +1,27 @@
+.btn {
+    margin-top: 25px;
+    width: 75%;
+    height: 40px;
+    padding: 10px;
+    border-color: black;
+    border-width: 0px;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: #ff4a48;
+    transition-duration: 0.2s;
+    font-size: 20px;
+    color: black;
+    font-family: "Arial" ;
+    font-weight: bolder;
+    color: white;
+}
+
+.btn:hover {
+    transition-duration: 0.2s;
+    background-color: #db3230;
+}
+
+.btn::placeholder {
+    color: rgba(51, 42, 42, 0.73);
+    opacity: 1;
+}

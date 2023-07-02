@@ -36,3 +36,6 @@ MongoDB was chosen as the database for this project for several reasons.
 MongoDB provides a flexible data schema that allows easy modification of data structure during development. MongoDB has a simple and intuitive interface, making it an excellent choice for developers, especially those who are new to working with databases. Offers powerful tools for executing queries and aggregating data. This enables efficient retrieval of required data and performing complex analytical operations. This makes sense for the future.
 
 Next.js is based on React, a popular library for building user interfaces. It supports both server-side rendering (SSR) and client-side rendering (CSR). This allows you to create applications with excellent performance, fast initial rendering, and improved search engine optimization. Additionally, my decision was well-founded, and I mentioned earlier that I enjoy learning new things.
+
+
+Here are some links where i found information, including my friend's website, https://www.unimay.media, documentation for using MongoDB, https://cloud.mongodb.com, for design inspiration, https://scaleup.agency, and various informative websites.

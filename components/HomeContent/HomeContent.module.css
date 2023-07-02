@@ -1,0 +1,74 @@
+.home__container {
+    position: relative;
+  }
+  
+  .video__background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+  }
+  
+  .content__overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 17%;
+  }
+  
+  .content__overlay h2 {
+    color: white;
+    font-size: 3vw;
+    text-align: center;
+  }
+  
+  .button {
+    margin-top: 20px;
+    padding: 10px 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    backdrop-filter: blur(2px);
+    transition: background-color 0.3s;
+  }
+  
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .content__overlay {
+    position: fixed;
+    top: 20%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .content__overlay {
+    position: fixed;
+    top: 20%;
+  }
+
+  .content__overlay h2 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content__overlay {
+    position: fixed;
+    top: 30%;
+  }
+
+  .content__overlay h2 {
+    font-size: 25px;
+  }
+}
