@@ -1,13 +1,13 @@
-## Website with User Registration and Visualization of Elements
-# Description
+# Website with User Registration and Visualization of Elements
+## Description
 This project is a web application that allows users to register and visualize elements. The website provides a user interface for login, user registration, and displaying visual elements.
 
-# Features
+## Features
 1) User registration using email and password.
 2) User authentication to access secure sections of the website.
 3) Visualization of  elements such as images.
 
-# Installation
+## Installation
 1) Clone the repository to your local machine.
 2) Install dependencies by running `npm install fortawesome/fontawesome-free axios bcryptjs mongodb mongoose @types/bcryptjs react-icons next-auth`. If something wrong you can install all the dependencies in package.json.
 3) Write this code in your command line for generation random string for session: 
@@ -17,19 +17,19 @@ $randomString = [Convert]::ToBase64String($bytes)
 Write-Host $randomString
 4) Start the application using command line `npm run dev`.
 
-# Usage
+## Usage
 1) Open a web browser and go to http://localhost:3000.
 2) If you are a new user, click on the "Create account" link and fill in the required details.
 3) Once logged in, you will be redirected to the main page where you can view visual elements.
 
-# Configuration
+## Configuration
 To configure the application, modify the next.config.js file where you can specify parameters such as database settings or server configurations.
 
-# Frequently Asked Questions
+## Frequently Asked Questions
 How can I create a new user?
 On the main page of the website, click on the "Create account" link and fill in the required details.
 
-# Conclusion
+## Conclusion
 This project was developed by me without prior knowledge of technologies such as Next.js and MongoDB. However, thanks to this work, I was able to significantly improve my skills and gain new experience in web application development.
 
 MongoDB was chosen as the database for this project for several reasons.
