@@ -12,7 +12,7 @@ const UserProfile = () => {
         {session && (
           <>
             <div className={style.center} style={{justifyContent: 'center', paddingTop: '120px'}}>
-              <p className={style.login_text} style={{paddingBottom: '10px'}}>Welcome, {session?.user?.fullName}</p>
+              <p className={style.login_text} style={{paddingBottom: '10px'}}>Welcome, {session?.user?.name}</p>
               <p style={{color: 'white'}}>Are you sure you want to logout?</p>
               <Button title="Logout" onClick={signOut} />
             </div>
