@@ -46,9 +46,6 @@ const options: NextAuthOptions = {
   session: {
     strategy: "jwt",
   },
-  jwt: {
-    secret: process.env.NEXTAUTH_JWT_SECRET,
-  },
   callbacks: {
     jwt: async ({ token, user }) => {
       user && (token.user = user);
@@ -61,7 +58,7 @@ const options: NextAuthOptions = {
       return session;
     },
   },
-  secret: process.env.NEXTAUTH_SECRET, // Use environment variable for secret key
+  secret: process.env.NEXTAUTH_SECRET,
 };
 
 export default NextAuth(options);
