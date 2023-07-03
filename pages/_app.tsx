@@ -13,9 +13,9 @@ export default function App({ Component, pageProps }: AppProps) {
 
   const backgroundImage = 'https://lh3.googleusercontent.com/u/1/drive-viewer/AFGJ81qFoZhtjDpkow-phxhpQaHfwrHqzZzmL1y5gB_pQ-NalEm_8r3NLVDOOI1qUQRAvdLdjR0fFxshFJQcyURajauuv1_f0Q=w1920-h1007';
 
-  const isLoginPage = Component.name === 'login';
-  const isSignupPage = Component.name === 'signup';
-  const isLogoutPage = Component.name == 'profile';
+  const isLoginPage = pathname === '/login';
+  const isSignupPage = pathname === '/signup';
+  const isLogoutPage = pathname == '/profile';
 
   if (pathname === '/login' || pathname === '/signup' || pathname === '/profile') {
     show = false
@@ -28,21 +28,21 @@ export default function App({ Component, pageProps }: AppProps) {
           <Head>
             {(isLoginPage || isSignupPage || isLogoutPage) && (
               <style>{`
-                html {
-                  background-image: url(${backgroundImage});
-                  background-size: cover;
-                  background-repeat: no-repeat;
-                  min-height: 100%;
-                  transition-duration: 1000s;
-                }
-
-                html:hover {
-                  transition-duration: 100s;
-                  transform-style: flat;
-                  margin-left: -50%;
-                }
+              html {
+                background: url(${backgroundImage});
+                background-size: cover;
+                background-repeat: no-repeat;
+                min-height: 100%;
+                transition-duration: 1000s;
+              }
+        
+              html:hover {
+                transition-duration: 100s;
+                transform-style: flat;
+                margin-left: -50%;
+              }
               `}</style>
-            )}
+            )},
             {(!isLoginPage && !isSignupPage && !isLogoutPage) && (
               <style>{`
                 html {
