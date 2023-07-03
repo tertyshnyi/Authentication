@@ -1,4 +1,3 @@
-require('dotenv').config(); // Load environment variables from .env file
 import { compare } from 'bcryptjs';
 import NextAuth, { NextAuthOptions } from 'next-auth';
 import CredentialsProvider from 'next-auth/providers/credentials';
@@ -46,6 +45,9 @@ const options: NextAuthOptions = {
   },
   session: {
     strategy: "jwt",
+  },
+  jwt: {
+    secret: process.env.NEXTAUTH_JWT_SECRET,
   },
   callbacks: {
     jwt: async ({ token, user }) => {
